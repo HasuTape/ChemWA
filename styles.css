@@ -16,6 +16,7 @@ header
     border: 10px solid transparent;
     border-image: linear-gradient(135deg, #8A2BE2, #00CED1);
     border-image-slice: 1;
+    justify-self: center;
 
 }
 nav
@@ -39,7 +40,6 @@ article
     padding: 5px;
     width: 50%;
     display: flex;
-    justify-self: center;
     gap: 5px;
     flex-direction: column;
 }
