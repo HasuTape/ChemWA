@@ -3,7 +3,7 @@ html
     font-family: "Comic Neue", serif;
     font-weight: 300;
     font-style: normal;
-    background: rgb(255, 88, 255);
+    background: linear-gradient(135deg, #bc74ff, #81ffff);
 }
 header
 {
