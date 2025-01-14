@@ -4,8 +4,9 @@ html
     font-weight: 300;
     font-style: normal;
     background: linear-gradient(135deg, #bc74ff, #81ffff);
-    heigh: auto;
     width: 100%;
+    min-height: 100%;
+    height: auto;
 }
 header
 {
