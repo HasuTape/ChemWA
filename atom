@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="Wiktor Woźny">
+    <title>Kwasy</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    <br>
+    <nav>
+        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">
+            Chemia ogólna
+        </button> 
+        <button id="2" class="button-chemistry" onclick="goto('norg.html')">
+            Chemia nieorganiczna
+        </button> 
+        <button id="3" class="button-chemistry" onclick="goto('org.html')">
+            Chemia organiczna
+        </button> 
+        <button id="4" class="button-chemistry" onclick="goto('ele.html')">
+            Elektrochemia
+        </button> 
+        <button id="5" class="button-chemistry" onclick="goto('stec.html')">
+            Stechiometria
+        </button>
+        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">
+            Kontakt
+        </button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w temacie atom</h1>
+        <h3>Zacznijmy od tego czym jest atom.</h3>
+        <p>Atom to najmniejsza część pierwiastka która zochowuje jego własności.</p>
+        <h3>Atom się składa z:</h3>
+        <ul>
+          <li>
+              Elektrony e<sup>-</sup>
+          </li>
+          <li>
+              Protony p<sup>+</sup>
+          </li>
+          <li>
+              Neutrony n<sup>0</sup>
+          </li>
+        </ul>
+        <p>Indeks górny czyli <sup>to</sup> oznacza ładunek elektryczny. Każdy atom ma tyle samo elektronów i protonów. W przeciwnym wypadku jest jonem.</p>
+        <h3>Co to jon?</h3>
+        <p>Jon to atom o ładunku elektrycznym. Powstaje wtedy kiedy liczba protonów ≠ liczbie elektronów.</p>
+        <h3>Konfiguracja elektronowa.</h3>
+        <p>Konfiguracja elektronowa to zapis tego ile elektronów znajduje się w konkretnym atomie. Np. tlen ma l. atomową(z) o wartości 8 co znaczy że ma 8 elektronów. Znajduje się w 2 okresie(poziomym rzędzie) ukladu okresowego co oznacza ze ma 2 powłoki. Zaczynajmy!</p>
+        <h3>WZór na maksymalną liczbe elektronów na powłokach to 2n<sup>2</sup></h3>
+        <p>Co oznacza że na pierwszej powłoce może być 2 ale już drugiej 8. Tyle wystarczy. Teraz zapisujemy zaczynając od powłoki k idziemy alfabetycznie k<sup>2</sup> dlatego że pierwsza powloka to k(nwm czm) a na niej leżą 2 elektrony. następna jest powloka l na ktorej jest 8? Nie, 8 + 2 daje 10, amy mamy tylko 8 z czego 2 są na powłoce k. Dajemy zatem 6 elektronów(tyle ile zostało).</p>
+        <h3>Zostajemy z konfiguracją K<sup>2</sup>L<sup>6</sup>.</h3>
+        <p>To tyle z tematu na dole macie test oraz nastepny temat.</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>Kwas tlenowy</th>
+                <th>Kwas beztlenowy</th>
+            </tr>
+            <tr>
+                <th>Zawartość tlenu</th>
+                <th>Ma</th>
+                <th>Nie ma</th>
+            </tr>
+            <tr>
+                <th>Siła (nie jest ściśle zależna od tego)</th>
+                <th>Z reguły mocniejsze</th>
+                <th>Z reguły słabsze</th>
+            </tr>
+            <tr>
+                <th>Bezwodnik</th>
+                <th>Ma</th>
+                <th>Nie ma</th>
+            </tr>
+        </table>
+        <p>Więc który kwas jest silniejszy? HCl czy H<sub>2</sub>CO<sub>3</sub>? <label class="spoiler">Oczywiście ze HCl, bo to wyjątek i ta zasada jest bardzo dziurawa 💀</label></p>
+        <p>I się tutaj zatrzymajmy na chwilę. Czym jest bezwodnik? Przecież nie mówiłem. No, dlatego mówię: bezwodnik to taki tlenek, który po reakcji z wodą daje ten kwas (bez-wodnik = bez wody). Przykład: H<sub>2</sub>SO<sub>3</sub> (kwas siarkowy(IV)). Zabierzmy wodę od tego, czyli 2 wodory i 1 tlen. Rozbijmy ten kwas na atomy:</p>
+        <ul>
+            <li style="text-decoration: line-through;">H</li>
+            <li style="text-decoration: line-through;">H</li>
+            <li style="text-decoration: line-through;">O</li>
+            <li>O</li>
+            <li>O</li>
+            <li>S</li>
+        </ul>
+        <p>Popatrzmy, co zostało: 2 O (tlen) i 1 S (siarka). Po połączeniu tego w jeden związek powstaje SO<sub>2</sub>. Czemu nie O<sub>2</sub>S? Dlatego że nazwy czyta się od tyłu. W przypadku SO<sub>2</sub> czyta się „Tlenek Siarki(IV)”, a w przypadku O<sub>2</sub>S wyszłoby „Siarczek(IV) Tlenu”. Swoją drogą siarczek (czegokolwiek) jest już błędem, bo siarka w siarczkach zawsze ma <a href="wartosciowosci.html">wartościowość</a> II.</p>
+        <p>Otrzymać kwas można na kilka sposobów:</p>
+        <ul>
+            <li>H<sub>2</sub> + Niemetal &rightarrow; Kwas beztlenowy</li>
+            <li>Tlenek niemetalu + H<sub>2</sub>O &rightarrow; Kwas tlenowy</li>
+            <li>Kwas1 + Sól1 &rightarrow; Kwas2 + Sól2</li>
+        </ul>
+        <p>To w sumie tyle, co o kwasach mam wam do powiedzenia na razie. Teraz możecie udać się do testu lub następnego tematu chemii nieorganicznej.</p>
+        <table>
+            <tr>
+                <li>
+                    <a href="atomT.html">Test z tematu</a>
+                </li>
+            </tr>
+            <tr>
+                <li>
+                    <a href="wiazania.html">Następny temat -&gt;</a>
+                </li>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>
