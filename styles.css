@@ -20,7 +20,7 @@ header
     border-image: linear-gradient(135deg, #8A2BE2, #00CED1);
     border-image-slice: 1;
     justify-self: center;
-
+    width: 100%;
 }
 nav
 {
