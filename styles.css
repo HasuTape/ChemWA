@@ -88,3 +88,8 @@ button
 }
 .spoiler { background-color: #ccc; color: transparent; cursor: pointer; display: inline; } 
 .spoiler:hover { color: black; }
+#tnt
+{
+    width: 20%;
+    height: auto;
+}
