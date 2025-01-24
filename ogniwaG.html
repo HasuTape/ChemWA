@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="Wiktor Woźny">
+    <title>Ogniwa galwaniczne</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    <br>
+    <nav>
+        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">
+            Chemia ogólna
+        </button> 
+        <button id="2" class="button-chemistry" onclick="goto('norg.html')">
+            Chemia nieorganiczna
+        </button> 
+        <button id="3" class="button-chemistry" onclick="goto('org.html')">
+            Chemia organiczna
+        </button> 
+        <button id="4" class="button-chemistry" onclick="goto('ele.html')">
+            Elektrochemia
+        </button> 
+        <button id="5" class="button-chemistry" onclick="goto('stec.html')">
+            Stechiometria
+        </button>
+        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">
+            Kontakt
+        </button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w temacie ogniwa galwaniczne</h1>
+        <h3>Z czego sie składa ogniwo galwaniczne?</h3>
+        <ul>
+            <li>
+                2 półogniwa
+                <ul>
+                    <li>
+                        elektroda(kawałek metalu np. blaszka)
+                    </li>
+                    <li>
+                        elektrolit(roztwór soli danego metalu)
+                    </li>
+                    <li>
+                        naczynie ale to oczywiste
+                    </li>
+                </ul>
+            </li>
+            <li>
+                przewód(łączy elektrody)
+            </li>
+            <li>
+                klucz elektrolityczny(najczęsciej rurka która wchodzi do obu roztworów, zawierająca sól która nie reaguje z roztworami.)
+            </li>
+        </ul>
+        <p>Wytłumacze teraz wszystkie części po kolei!</p>
+        <h3>Półogniwo:</h3>
+        <p>Półogniwo przygotować można tak:</p>
+        <ol>
+            <li>
+                Nalej do zlewki roztworu soli(Często jest siarczan😉)
+            </li>
+            <li>
+                Wsadz blaszke tego metalu(zawartego w soli)
+            </li>
+            <li>
+                Gratulacje! Masz półogniwo!
+            </li>
+        </ol>
+        <h3>Przewód:</h3>
+        <p>Przewód to kabel łączący 2 półogniwa przez elektrody</p>
+        <h3>Klucz elektrolityczny</h3>
+        <p>Najważniejsze, bo bez tego nie ruszy.</p>
+        <ol>
+            <li>
+                Nalej do rurki soli(Czesto chlorek/siarczan sodu)
+            </li>
+            <li>
+                Wsadz rurke tak żeby roztwór soli w kluczu dotykał soli w półogniwach
+            </li>
+        </ol>
+        <p>Po wykonaniu tego mamy ogniwo galwaniczne!!!</p>
+        <h3>Dobra, ale po co?</h3>
+        <p>Ogniwo galwaniczne wytwarza prąd elektryczny. Jak? <label class="spoiler">Szybko</label> Najpierw obierzmy za cel konkretne ogniwo np takie które każdy zna i kocha - cynkowo-miedziane. Dobra ale dalej nie wiecie jak "prąd sie robi". Cynk oddaje elektrony przez przewód do elektrody miedzianej która daje te elektrony swoim kationom w roztworze. W czego efekcie do roztworu soli cynku wchodzą kationy cynku, a z roztworu soli miedzi ubywa kationów. To co? Zostaną same aniony? Nie, nie, nie, na ich miejsce wchodzą jony z klucza elektrolitycznego. W przypadku wykonczenia soli w kluczu reakcja ustaje.</p>
+        <h3>Jak zapisać schemat ogniwa galwanicznego</h3>
+        <p>To jest stosunkowo najłatwiejsza żecz w tym temacie😀. Jak już jesteśmy przy cynkowo-miedzianym to przy nim zostanmy! Zasadą zapisu jest: - anoda | elektrolit || elektrolit | katoda +. Gdzie || oznacza klucz elektrolityczny. Dobra, to wiemy wiec wykorzystajmy to do zapisania schematu ogniwa cynkowo-miedzianego. Anoda to cynk, bo zabiera elektrony czyli <label class="spoiler">utlenia sie</label> i jego elektrolitem moze byc np. siarczan cynku. Katodą jak już domyślacie się jest <label class="spoiler">elektroda miedziana</label>, która się <label class="spoiler">redukuje</label>, bo oddaje elektrony.</p>
+        <h3>Co to SEM</h3>
+        <p>SEM to siła elektromotoryczna równa napięciu w obwodzie ogniwa. Obliczyć można ją odejmująć potencjal elektrochemiczny anody od katody. W tym przypadku wyjdzie: 0.34 - (-0.76) = <label class="spoiler">1.1V</label>. Po sprawdzeniu napięcia wyjdzie właśnie tyle volt.</p>
+        <p>To chyba tyle z tego tematu zapraszam do kolejnych oraz testu.</p>
+        <table>
+            <tr>
+                <li>
+                    <a href="nitryT.html">Test z tematu</a>
+                </li>
+            </tr>
+            <tr>
+                <li>
+                    <a href="aminy.html">Następny temat -&gt;</a>
+                </li>
+            </tr>
+        </table>
+    </article>
+</body>
+</html>
