@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="Wiktor Woźny">
+    <title>pH</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    <br>
+    <nav>
+        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">
+            Chemia ogólna
+        </button> 
+        <button id="2" class="button-chemistry" onclick="goto('norg.html')">
+            Chemia nieorganiczna
+        </button> 
+        <button id="3" class="button-chemistry" onclick="goto('org.html')">
+            Chemia organiczna
+        </button>
+        <br>
+        <button id="4" class="button-chemistry" onclick="goto('ele.html')">
+            Elektrochemia
+        </button> 
+        <button id="5" class="button-chemistry" onclick="goto('stec.html')">
+            Stechiometria
+        </button>
+        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">
+            Kontakt
+        </button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w temacie pH</h1>
+        <h3>Czym jest pH?</h3>
+        <p>Jest to skala <a href="kwasy.html">kwasowości</a> i <a href="zasady.html">zasadowości</a> zaczynająca sie od 0 a kończąca na 14.</p>
+        <h3>Jak odczytać?</h3>
+        <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+            <tr>
+              <th style="background: rgb(255, 0, 0); width:6.66%;">0</th>
+              <th style="background: rgb(255, 51, 0); width:6.66%;">1</th>
+              <th style="background: rgb(255, 102, 0); width:6.66%;">2</th>
+              <th style="background: rgb(255, 153, 0); width:6.66%;">3</th>
+              <th style="background: rgb(255, 204, 0); width:6.66%;">4</th>
+              <th style="background: rgb(255, 255, 0); color: #000; width:6.66%;">5</th>
+              <th style="background: rgb(204, 255, 0); color: #000; width:6.66%;">6</th>
+              <th style="background: rgb(153, 255, 51); color: #000; width:6.66%;">7</th>
+              <th style="background: rgb(102, 255, 102); color: #000; width:6.66%;">8</th>
+              <th style="background: rgb(51, 204, 255); width:6.66%;">9</th>
+              <th style="background: rgb(0, 153, 255); width:6.66%;">10</th>
+              <th style="background: rgb(0, 102, 255); width:6.66%;">11</th>
+              <th style="background: rgb(0, 51, 255); width:6.66%;">12</th>
+              <th style="background: rgb(51, 0, 255); width:6.66%;">13</th>
+              <th style="background: rgb(102, 0, 255); width:6.66%;">14</th>
+            </tr>
+        </table>
+        <p>Jak widzicie sporządziłem skale pH. 7 to połowa skali, jest obojętne. Po lewej od 7 jest pH kwasowe, a po prawej zasadowe.</p>
+        <h3>Jak sprawdzić pH?</h3>
+        <p>Można to sprawdzić przy pomocy:</p>
+        <ul>
+            <li>
+                Wskaźników(indyktorów) pH
+            </li>
+            <li>
+                Papierków uniwersalnych
+            </li>
+            <li>
+                pH mierza
+            </li>
+        </ul>
+        <p>Zajmijmy sie wskaźnikami na początku - są to substancje które w obecności zmieniającego sie pH inaczej sie zachowuje(zazwyczaj jest to zmiana koloru). Jakie są to substancje?</p>
+        <ul>
+            <li>
+                fenoloftaleina
+                <table style="table-layout: fixed; width: 100%; border-collapse: collapse; text-align: center;">
+                    <tr>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">0</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">1</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">2</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">3</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">4</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">5</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">6</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">7</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">8</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">9</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">10</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">11</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">12</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">11</th>
+                        <th style="border: 1px solid #ffffff; padding: 8px;">12</th>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <p>Zapraszam do nastepnego tematu albo do testu :)</p>
+        <table>
+            <tr>
+                <li>
+                    <a href="ketonyT.html">Test z tematu</a>
+                </li>
+            </tr>
+            <tr>
+                <li>
+                    <a href="aldehydy.html">Następny temat -&gt;</a>
+                </li>
+            </tr>
+        </table>
+    </article>
+    <footer>
+        <a href="https://warchem.pl">
+            <img src="png/warchem.png" alt="Warchem">
+        </a>
+    </footer>
+</body>
+</html>

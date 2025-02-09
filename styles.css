@@ -48,6 +48,11 @@ article
     gap: 5px;
     flex-direction: column;
 }
+footer
+{
+    display: flex;
+    justify-content: center;
+}
 article p
 {
     padding: 5px;
