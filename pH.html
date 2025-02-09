@@ -82,7 +82,7 @@
         <p>Zajmijmy sie wskaźnikami na początku - są to substancje które w obecności zmieniającego sie pH inaczej sie zachowuje(zazwyczaj jest to zmiana koloru). Jakie są to substancje?</p>
         <ul>
             <li>
-                fenoloftaleina
+                Fenoloftaleina
                 <table style="table-layout: fixed; width: 100%; border-collapse: collapse; text-align: center;">
                     <tr>
                         <th style="background: rgb(255, 255, 255); width:6.66%;">0</th>
@@ -93,7 +93,7 @@
                         <th style="background: rgb(255, 255, 255); width:6.66%;">5</th>
                         <th style="background: rgb(255, 255, 255); width:6.66%;">6</th>
                         <th style="background: rgb(255, 255, 255); width:6.66%;">7</th>
-                        <th style="background: deeppink; width:6.66%;">8</th>
+                        <th style="background: linear-gradient(90deg, rgb(255, 255, 255), deeppink); width:6.66%;">8</th>
                         <th style="background: deeppink; width:6.66%;">9</th>
                         <th style="background: deeppink; width:6.66%;">10</th>
                         <th style="background: deeppink; width:6.66%;">11</th>
@@ -104,14 +104,14 @@
                 </table>
             </li>
             <li>
-                oranż metylowy
+                Oranż metylowy
                 <table style="table-layout: fixed; width: 100%; border-collapse: collapse; text-align: center;">
                     <tr>
                         <th style="background: rgb(255, 0, 0); width:6.66%;">0</th>
                         <th style="background: rgb(255, 0, 0); width:6.66%;">1</th>
                         <th style="background: rgb(255, 0, 0); width:6.66%;">2</th>
-                        <th style="background: yellow; width:6.66%;">3</th>
-                        <th style="background: yellow; width:6.66%;">4</th>
+                        <th style="background: linear-gradient(90deg, red, orange); width:6.66%;">3</th>
+                        <th style="background: linear-gradient(90deg, orange, yellow); width:6.66%;">4</th>
                         <th style="background: yellow; width:6.66%;">5</th>
                         <th style="background: yellow; width:6.66%;">6</th>
                         <th style="background: yellow; width:6.66%;">7</th>
@@ -126,7 +126,7 @@
                 </table>
             </li>
             <li>
-                lakmus
+                Lakmus
                 <table style="table-layout: fixed; width: 100%; border-collapse: collapse; text-align: center;">
                     <tr>
                         <th style="background: #FF0000; width:6.66%;">0</th>
@@ -134,10 +134,10 @@
                         <th style="background: rgb(255, 0, 0); width:6.66%;">2</th>
                         <th style="background: red; width:6.66%;">3</th>
                         <th style="background: red; width:6.66%;">4</th>
-                        <th style="background: #800080; width:6.66%;">5</th>
-                        <th style="background: #800080; width:6.66%;">6</th>
-                        <th style="background: #800080; width:6.66%;">7</th>
-                        <th style="background: #800080; width:6.66%;">8</th>
+                        <th style="background: red; width:6.66%;">5</th>
+                        <th style="background: linear-gradient(90deg, red, #FF00FF); width:6.66%;">6</th>
+                        <th style="background: #FF00FF; width:6.66%;">7</th>
+                        <th style="background: linear-gradient(90deg, #FF00FF, blue); width:6.66%;">8</th>
                         <th style="background: #0000FF; width:6.66%;">9</th>
                         <th style="background: blue; width:6.66%;">10</th>
                         <th style="background: blue; width:6.66%;">11</th>
@@ -148,16 +148,44 @@
                 </table>
             </li>
         </ul>
-        <p>Zapraszam do nastepnego tematu albo do testu :)</p>
+        <h3>Jak obliczyć pH?</h3>
+        <p>Tutaj żegnam szkoły podstawowe :) pH to odwrócony  logarytm dziesiętny z stężenia molowego jonów H<sup>+</sup>.</p>
+        <h3>Co to znaczy?</h3>
+        <p>Jak mamy:<br>[H<sup>+</sup>] = 10<sup>-7</sup>M możemy obliczyć to tak: -log[H<sup>+</sup>] = -log[10<sup>-7</sup>M] = 7</p>
+        <p>Ale skad to 7? Ale jak to obliczyć? Już mówie. Do tego nawet nie musicie wiedzieć czym jest logarytm. Wystarczy że weźmiecie taki wzór [H<sup>+</sup>] = 10<sup>-pH</sup> w poprzednim przypadku bylo [H<sup>+</sup>] = 10<sup>-7</sup> co oznacza że pH = 7. Super że to rozumiesz <label class="spoiler">chb</label>.</p>
+        <h3>Zależności!</h3>
+        <p>Jak mamy pH to też pOH które jak można sie domyśleć oblicza sie ze wzoru -log[OH<sup>-</sup>]. Ale po co nam to? A do takiej zależności: pH + pOH = 14. To pozwala obliczyc wszystko posiadając minimum steżenie jonow OH<sup>-</sup> lub H<sup>+</sup>.</p>
+        <ul>
+            <li>
+                pOH = 3<br>
+                pH = <label class="spoiler">11</label>
+            </li>
+            <li>
+                [H<sup>+</sup>] = 1M<br>
+                pH = <label class="spoiler">0</label>
+            </li>
+            <li>
+                pH = 2<br>
+                [OH<sup>-</sup>] = <label class="spoiler">10<sup>-12</sup>M</label>
+            </li>
+            <li>
+                [OH<sup>-</sup>] = 10<sup>-9</sup><br>
+                [H<sup>+</sup>] = <label class="spoiler">10<sup>-5</sup></label>
+            </li>
+            <li>
+                [H<sup>+</sup>] = 10<sup>-4</sup><br>
+                pOH = <label class="spoiler">10</label>
+            </li>
+        </ul>
         <table>
             <tr>
                 <li>
-                    <a href="ketonyT.html">Test z tematu</a>
+                    <a href="pHT.html">Test z tematu</a>
                 </li>
             </tr>
             <tr>
                 <li>
-                    <a href="aldehydy.html">Następny temat -&gt;</a>
+                    <a href="index.html">Powrót na stronę główną</a>
                 </li>
             </tr>
         </table>
