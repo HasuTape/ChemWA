@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="Wiktor Woźny">
+    <title>Fenole</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    <h6 style="display: flex; justify-content: center;">© 2025 ChemWA | Wszystkie prawa zastrzeżone</h6>
+    <nav>
+        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">
+            Chemia ogólna
+        </button> 
+        <button id="2" class="button-chemistry" onclick="goto('norg.html')">
+            Chemia nieorganiczna
+        </button> 
+        <button id="3" class="button-chemistry" onclick="goto('org.html')">
+            Chemia organiczna
+        </button> 
+        <button id="4" class="button-chemistry" onclick="goto('ele.html')">
+            Elektrochemia
+        </button> 
+        <button id="5" class="button-chemistry" onclick="goto('stec.html')">
+            Stechiometria
+        </button>
+        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">
+            Kontakt
+        </button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w temacie fenole</h1>
+        <h3>Czym są fenole?</h3>
+        <p>Są to pochodne benzenu które posiadają grupe hydroksylową przyłączoną <label style="font-weight: bolder;">bezpośrednio do węgla w pierścieniu aromatycznym</label></p>
+        <p>Podstawowym przedstawicielem jest: <br><img src="png/fenol.png" alt="Fenol" class="png"><br>czyli fenol.</p>
+        <h3>Wzór ogólny to ArOH (Ar to grupa arylowa)</h3>
+        <h3>Właściwości:</h3>
+        <ul>
+            <li>
+                Są to ciecze bądź ciała stałe
+            </li>
+            <li>
+                Mają właściwości odkarzające
+            </li>
+        </ul>
+        <h3>Otrzymywanie:</h3>
+        <p>Otrzymac fenole można np. za pomocą hydrolizy fluorowcopochodnych węglowodorów: C<sub>6</sub>H<sub>5</sub>Cl + H<sub>2</sub>O &rarr; C<sub>6</sub>H<sub>5</sub>OH + HCl</p>
+        <h3>Dysocjacja</h3>
+        <p>ArOH &rarr; ArO<sup>-</sup> + H<sup>+</sup><br> ArO<sup>-</sup> to jon fenolanowy, który wygląda tak: <br><img src="png/fenolan.png" alt="Fenolan" class="png"><br>Jak widać jest to kwas(słaby ale silniejszy od alkoholi dzięki swojemu pierścieniowi aromatycznemu)</p>
+        <div class="ciekawostka">
+            <h3>Fenole jako środki do dezynfekcji!</h3>
+            <p>Ze względu na wlaściwości odkarzające powstała skala: "współczynnik fenoli" który mierzy skuteczność w dezynfekcji w porównaniu do fenolu</p>
+        </div>
+        <p>To w sumie tyle. Zapraszam do przejścia do następnego tematu.</p>
+        <table>
+            <tr>
+                <li>
+                    <a href="ketony.html">Następny temat -&gt;</a>
+                </li>
+            </tr>
+        </table>
+    </article>
+    <footer>
+    <footer>
+        <a href="https://warchem.pl">
+            <img src="png/warchem.png" alt="Warchem">
+        </a>
+    </footer>
+</body>
+</html>
