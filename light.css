@@ -1,0 +1,113 @@
+html
+{
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(135deg, #bc74ff, #81ffff);
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.ciekawostka
+{
+    background: linear-gradient(135deg, #8A2BE2, #00CED1);
+    border-image: red;
+    border-image-slice: 1;
+    border: 3px solid red;
+    padding: 3px;
+}
+header
+{
+    background: linear-gradient(135deg, #bc74ff, #81ffff);
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    border: 10px solid transparent;
+    border-image: linear-gradient(135deg, #8A2BE2, #00CED1);
+    border-image-slice: 1;
+    justify-self: center;
+    width: 99%;
+}
+nav
+{
+    width: 100%;    
+    align-items: center;
+    padding: 3px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+input
+{
+    font-family: "Mogra", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+article, input
+{
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+    border: 7px solid transparent;
+    background: linear-gradient(135deg, #dfbdff, #a6feff);
+    border-image: linear-gradient(135deg, #bc74ff, #81ffff);
+    border-image-slice: 1;
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+}
+article p
+{
+    padding: 5px;
+}
+article h1
+{
+    padding: 5px;
+    justify-self: center;
+    display: flex;
+}
+button
+{
+    padding: 10px;
+    height: min-content;
+    align-self: center;
+}
+.button-chemistry {
+    background: linear-gradient(135deg, #8A2BE2, #00CED1);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-chemistry:hover {
+    background: linear-gradient(135deg, #7A1B9D, #00B2B2);
+    transform: scale(1.05);
+}
+
+.button-chemistry:active {
+    transform: scale(0.95);
+}
+.spoiler { background-color: #ccc; color: transparent; cursor: pointer; display: inline; } 
+.spoiler:hover { color: black; }
+.png
+{
+    width: 75px;
+    height: auto;
+}
