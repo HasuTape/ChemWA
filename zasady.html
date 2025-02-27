@@ -12,14 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" href="light.css">
     <script>
-        (function() {
-            const theme = localStorage.getItem("theme");
-            if (theme === "dark") {
-               ById("theme-style").href = "dark.css";
-            } else {
-                document.getElementById("theme-style").href = "light.css";
-            }
-        })();
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+           ById("theme-style").href = "dark.css";
+        } else {
+            document.getElementById("theme-style").href = "light.css";
+        }
     </script>
     <script src="script.js" defer></script>
 </head>
@@ -27,7 +25,8 @@
     <header>
         <h1>Witaj w ChemWA</h1>
     </header>
-    <button id="theme-change">theme</button>
+    <br>
+    <button id="theme-change" class="button-chemistry">Motyw</button>
     <h6 style="display: flex; justify-content: center;">© 2025 ChemWA | Wszystkie prawa zastrzeżone</h6>
     <nav>
         <button id="1" class="button-chemistry" onclick="goto('ogl.html')">Chemia ogólna</button>
