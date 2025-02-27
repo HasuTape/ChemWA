@@ -3,14 +3,14 @@ html
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
-    background: linear-gradient(135deg, #bc74ff, #81ffff);
+    background: linear-gradient(135deg, #8A2BE2, #00CED1);
     width: 100%;
     min-height: 100%;
     height: auto;
 }
 .ciekawostka
 {
-    background: linear-gradient(135deg, #8A2BE2, #00CED1);;
+    background: linear-gradient(135deg, #bc74ff, #81ffff);
     border-image: red;
     border-image-slice: 1;
     border: 3px solid red;
@@ -18,14 +18,14 @@ html
 }
 header
 {
-    background: linear-gradient(135deg, #bc74ff, #81ffff);
+    background: linear-gradient(135deg, #8A2BE2, #00CED1);
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
     color: rgb(0, 0, 0);
     font-size: x-large;
     border: 10px solid transparent;
-    border-image: linear-gradient(135deg, #8A2BE2, #00CED1);
+    border-image: linear-gradient(135deg, #bc74ff, #81ffff);
     border-image-slice: 1;
     justify-self: center;
     width: 100%;
@@ -52,7 +52,7 @@ article, input
     margin-left: auto;
     background: white;
     border: 7px solid transparent;
-    background: linear-gradient(135deg, #dfbdff, #a6feff);
+    background: linear-gradient(135deg, #8A2BE2, #00CED1);
     border-image: linear-gradient(135deg, #bc74ff, #81ffff);
     border-image-slice: 1;
     padding: 5px;
