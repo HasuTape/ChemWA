@@ -4,7 +4,7 @@ html
     font-weight: 400;
     font-style: normal;
     background: linear-gradient(135deg, #8A2BE2, #00CED1);
-    max-width: 100%;
+    width: 100%;
     min-height: 100%;
     height: auto;
 }
