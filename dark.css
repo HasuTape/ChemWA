@@ -1,5 +1,4 @@
-html
-{
+html {
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
@@ -8,20 +7,19 @@ html
     min-height: 100%;
     height: auto;
 }
-.ciekawostka
-{
+
+.ciekawostka {
     background: linear-gradient(135deg, #bc74ff, #81ffff);
     border-image: red;
     border-image-slice: 1;
     border: 3px solid red;
     padding: 3px;
 }
-header
-{
+
+header {
     background: linear-gradient(135deg, #8A2BE2, #00CED1);
     text-align: center;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 3px;
     color: rgb(0, 0, 0);
     font-size: x-large;
     border: 10px solid transparent;
@@ -30,8 +28,8 @@ header
     justify-self: center;
     width: 99%;
 }
-nav
-{
+
+nav {
     width: 100%;    
     align-items: center;
     padding: 3px;
@@ -39,15 +37,16 @@ nav
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
-input
-{
+
+input {
     font-family: "Mogra", serif;
     font-weight: 100;
     font-style: normal;
 }
-article
-{
+
+article {
     margin-right: auto;
     margin-left: auto;
     background: white;
@@ -56,13 +55,14 @@ article
     border-image: linear-gradient(135deg, #bc74ff, #81ffff);
     border-image-slice: 1;
     padding: 5px;
-    width: 50%;
+    width: 90%;
+    max-width: 800px;
     display: flex;
     gap: 5px;
     flex-direction: column;
 }
-input
-{
+
+input {
     margin-right: auto;
     margin-left: auto;
     background: white;
@@ -73,27 +73,28 @@ input
     border-image-slice: 1;
     padding: 5px;
 }
-footer
-{
+
+footer {
     display: flex;
     justify-content: center;
 }
-article p
-{
+
+article p {
     padding: 5px;
 }
-article h1
-{
+
+article h1 {
     padding: 5px;
     justify-self: center;
     display: flex;
 }
-button
-{
+
+button {
     padding: 10px;
     height: min-content;
     align-self: center;
 }
+
 .button-chemistry {
     background: linear-gradient(135deg, #8A2BE2, #00CED1);
     border: none;
@@ -116,8 +117,24 @@ button
 .button-chemistry:active {
     transform: scale(0.95);
 }
-.png
-{
+
+.png {
     width: 75px;
     height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    article {
+        width: 95%;
+    }
+
+    .button-chemistry {
+        width: 100%;
+        margin: 5px 0;
+    }
 }
