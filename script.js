@@ -2,6 +2,20 @@ function goto(file)
 {
     window.location.href = file;
 }
+function checkAnswer(input,correctAnswer) {
+    
+    const userAnswer = input.value.trim(); // Pobranie wartości inputa
+
+    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+      const textElement = document.createElement("span");
+      textElement.textContent = userAnswer;
+      textElement.style.color = "black"; // Zmiana koloru na czarny
+      
+      input.replaceWith(textElement); // Zamiana inputa na tekst
+    } else {
+      alert("Niepoprawna odpowiedź! Spróbuj ponownie.");
+    }
+}
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("theme-change");
     const themeStyle = document.getElementById("theme-style");

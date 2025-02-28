@@ -40,6 +40,7 @@
         <button id="4" class="button-chemistry" onclick="goto('ele.html')">Elektrochemia</button>
         <button id="5" class="button-chemistry" onclick="goto('stec.html')">Stechiometria</button>
         <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">Kontakt</button>
+        <button id="6" class="button-chemistry" onclick="goto('sett.html')">Ustawienia</button>
     </nav>
     <br><br><br><br>
     <article>
@@ -48,15 +49,15 @@
         <p>Alkany (węglowodory nasycone) to węglowodory (czyli związki węgla i wodoru), które wyróżnia to, że nie posiadają wiązań wielokrotnych.</p>
         <p>Jeżeli alkan ma jeden atom węgla, nazywa się metan.</p>
         <ul>
-            <li>2 węgle - <label class="spoiler">etan</label></li>
-            <li>3 węgle - <label class="spoiler">propan</label></li>
-            <li>4 węgle - <label class="spoiler">butan</label></li>
-            <li>5 węgle - <label class="spoiler">pentan</label></li>
-            <li>6 węgle - <label class="spoiler">heksan</label></li>
-            <li>7 węgle - <label class="spoiler">heptan</label></li>
-            <li>8 węgle - <label class="spoiler">oktan</label></li>
-            <li>9 węgle - <label class="spoiler">nonan</label></li>
-            <li>10 węgle - <label class="spoiler">dekan</label></li>
+            <li>2 węgle - <input type="text" onblur="checkAnswer(this,'etan')"></li><br>
+            <li>3 węgle - <input type="text" onblur="checkAnswer(this,'propan')"></li><br>
+            <li>4 węgle - <input type="text" onblur="checkAnswer(this,'butan')"></li><br>
+            <li>5 węgli - <input type="text" onblur="checkAnswer(this,'pentan')"></li><br>
+            <li>6 węgli - <input type="text" onblur="checkAnswer(this,'heksan')"></li><br>
+            <li>7 węgli - <input type="text" onblur="checkAnswer(this,'heptan')"></li><br>
+            <li>8 węgli - <input type="text" onblur="checkAnswer(this,'oktan')"></li><br>
+            <li>9 węgli - <input type="text" onblur="checkAnswer(this,'nonan')"></li><br>
+            <li>10 węgli - <input type="text" onblur="checkAnswer(this,'dekan')"></li>
         </ul>
         <p>Alkany mają wzór ogólny C<sub>n</sub>H<sub>2n+2</sub>, co oznacza, że dla heptanu (7 atomów węgla) po podstawieniu do wzoru otrzymujemy C<sub>7</sub>H<sub>2*7+2</sub> = C<sub>7</sub>H<sub>14+2</sub> = C<sub>7</sub>H<sub>16</sub>.</p>
         <p>Alkany zawierające od 1 do 4 atomów węgla są gazami, od 5 do 16 - cieczami, a te o większej liczbie atomów węgla - ciałami stałymi.</p>
