@@ -104,8 +104,6 @@ button
 .button-chemistry:active {
     transform: scale(0.95);
 }
-.spoiler { background-color: #ccc; color: transparent; cursor: pointer; display: inline; } 
-.spoiler:hover { color: black; }
 .png
 {
     width: 75px;

@@ -5,22 +5,42 @@ function goto(file)
 document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("theme-change");
     const themeStyle = document.getElementById("theme-style");
+    const spoilerToggle = document.getElementById("spoiler-change");
+    const spoilerStyle = document.getElementById("spoiler-style");
 
-    // Sprawdza, jaki motyw jest zapisany w LocalStorage i ustawia go na stronie
+    // Sprawdzenie motywu z LocalStorage
     if (localStorage.getItem("theme") === "dark") {
         themeStyle.href = "dark.css";
     } else {
         themeStyle.href = "light.css";
     }
 
-    // Obsługa kliknięcia przycisku zmiany motywu
+    // Sprawdzenie ustawienia spoilerów
+    if (localStorage.getItem("spoiler") === "true") {
+        spoilerStyle.href = "spoiler.css";
+    } else {
+        spoilerStyle.href = "no-spoiler.css";
+    }
+
+    // Obsługa przycisku zmiany motywu
     themeToggle.addEventListener("click", () => {
-        if (themeStyle.href.includes("light.css")) {
+        if (themeStyle.href.endsWith("light.css")) {
             themeStyle.href = "dark.css";
             localStorage.setItem("theme", "dark");
         } else {
             themeStyle.href = "light.css";
             localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Obsługa przycisku zmiany spoilerów
+    spoilerToggle.addEventListener("click", () => {
+        if (localStorage.getItem("spoiler") === "true") {
+            spoilerStyle.href = "no-spoiler.css";
+            localStorage.setItem("spoiler", "false");
+        } else {
+            spoilerStyle.href = "spoiler.css";
+            localStorage.setItem("spoiler", "true");
         }
     });
 });
