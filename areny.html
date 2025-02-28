@@ -12,12 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" href="light.css">
     
+    <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
     <script>
         const theme = localStorage.getItem("theme");
+        const spoiler = localStorage.getItem("spoiler");
         if (theme === "dark") {
-           ById("theme-style").href = "dark.css";
+            document.getElementById("theme-style").href = "dark.css";
         } else {
             document.getElementById("theme-style").href = "light.css";
+        }
+        if (spoiler === "false") {
+            document.getElementById("spoiler-style").href = "no-spoiler.css";
+        } else {
+            document.getElementById("spoiler-style").href = "spoiler.css";
         }
     </script>
     <script src="script.js" defer></script>
