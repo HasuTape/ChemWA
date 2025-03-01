@@ -10,7 +10,7 @@ html
 }
 .ciekawostka
 {
-    background: linear-gradient(135deg, #8A2BE2, #00CED1);
+    background: linear-gradient(135deg, #bc74ff, #00CED1);
     border-image: red;
     border-image-slice: 1;
     border: 3px solid red;
@@ -53,7 +53,7 @@ article
     background: white;
     border: 7px solid transparent;
     background: linear-gradient(135deg, #dfbdff, #a6feff);
-    border-image: linear-gradient(135deg, #bc74ff, #81ffff);
+    border-image: linear-gradient(135deg, #bc75ff, #81ffff);
     border-image-slice: 1;
     padding: 5px;
     width: 50%;
@@ -68,7 +68,7 @@ input
     background: white;
     border: 7px solid transparent;
     background: linear-gradient(135deg, #dfbdff, #a6feff);
-    border-image: linear-gradient(135deg, #bc74ff, #81ffff);
+    border-image: linear-gradient(135deg, #8A2BE2, #81ffff);
     border-radius: 10%;
     border-image-slice: 1;
     padding: 5px;
