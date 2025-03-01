@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="Wiktor Woźny">
+    <title>Alkany</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="ChemWA, nauka chemii, chemia w ciekawy sposób, interaktywne zadania chemiczne, chemiczne gry edukacyjne, chemiczne quizy, chemiczne wyzwania, chemia dla uczniów, chemia dla studentów, chemia online, zabawna chemia, chemiczne eksperymenty, chemiczne animacje, chemiczne filmy edukacyjne, chemiczne infografiki, chemiczne komiksy, chemiczne ciekawostki, chemiczne zagadki, chemiczne łamigłówki, chemiczne projekty, chemiczne laboratoria domowe, chemiczne doświadczenia, chemiczne eksperymenty w domu, chemiczne tutoriale, chemiczne poradniki, chemiczne kursy online, chemiczne lekcje, chemiczne materiały edukacyjne, chemiczne zasoby, chemiczne narzędzia, chemiczne aplikacje, chemiczne technologie edukacyjne, chemiczne innowacje w nauczaniu, chemiczne metody nauczania, chemiczne techniki nauczania, chemiczne strategie edukacyjne, chemiczne programy nauczania, chemiczne plany lekcji, chemiczne scenariusze zajęć, chemiczne projekty edukacyjne, chemiczne inicjatywy edukacyjne, chemiczne społeczności edukacyjne">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="light.css">
+    <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
+    <script>
+        const theme = localStorage.getItem("theme");
+        const spoiler = localStorage.getItem("spoiler");
+        if (theme === "dark") {
+            document.getElementById("theme-style").href = "dark.css";
+        } else {
+            document.getElementById("theme-style").href = "light.css";
+        }
+        if (spoiler === "false") {
+            document.getElementById("spoiler-style").href = "no-spoiler.css";
+        } else {
+            document.getElementById("spoiler-style").href = "spoiler.css";
+        }
+
+        // Obiekt zawierający masy atomowe pierwiastków
+        const elementsData = {
+            H: { massNumber: 1 },
+            He: { massNumber: 4 },
+            Li: { massNumber: 7 },
+            Be: { massNumber: 9 },
+            B: { massNumber: 11 },
+            C: { massNumber: 12 },
+            N: { massNumber: 14 },
+            O: { massNumber: 16 },
+            F: { massNumber: 19 },
+            Ne: { massNumber: 20 },
+            Na: { massNumber: 23 },
+            Mg: { massNumber: 24 },
+            Al: { massNumber: 27 },
+            Si: { massNumber: 28 },
+            P: { massNumber: 31 },
+            S: { massNumber: 32 },
+            Cl: { massNumber: 35.5 },
+            K: { massNumber: 39 },
+            Ar: { massNumber: 40 },
+            Ca: { massNumber: 40 },
+            Sc: { massNumber: 45 },
+            Ti: { massNumber: 48 },
+            V: { massNumber: 51 },
+            Cr: { massNumber: 52 },
+            Mn: { massNumber: 55 },
+            Fe: { massNumber: 56 },
+            Co: { massNumber: 59 },
+            Ni: { massNumber: 59 },
+            Cu: { massNumber: 64 },
+            Zn: { massNumber: 65 },
+            Ga: { massNumber: 70 },
+            Ge: { massNumber: 73 },
+            As: { massNumber: 75 },
+            Se: { massNumber: 79 },
+            Br: { massNumber: 80 },
+            Kr: { massNumber: 84 },
+            Rb: { massNumber: 85 },
+            Sr: { massNumber: 88 },
+            Y: { massNumber: 89 },
+            Zr: { massNumber: 91 },
+            Nb: { massNumber: 93 },
+            Mo: { massNumber: 96 },
+            Tc: { massNumber: 98 },
+            Ru: { massNumber: 101 },
+            Rh: { massNumber: 103 },
+            Pd: { massNumber: 106 },
+            Ag: { massNumber: 108 },
+            Cd: { massNumber: 112 },
+            In: { massNumber: 115 },
+            Sn: { massNumber: 119 },
+            Sb: { massNumber: 122 },
+            I: { massNumber: 127 },
+            Te: { massNumber: 128 },
+            Xe: { massNumber: 131 },
+            Cs: { massNumber: 133 },
+            Ba: { massNumber: 137 },
+            La: { massNumber: 139 },
+            Ce: { massNumber: 140 },
+            Pr: { massNumber: 141 },
+            Nd: { massNumber: 144 },
+            Pm: { massNumber: 145 },
+            Sm: { massNumber: 150 },
+            Eu: { massNumber: 152 },
+            Gd: { massNumber: 157 },
+            Tb: { massNumber: 160 },
+            Dy: { massNumber: 163 },
+            Ho: { massNumber: 165 },
+            Er: { massNumber: 167 },
+            Tm: { massNumber: 169 },
+            Yb: { massNumber: 173 },
+            Lu: { massNumber: 175 },
+            Hf: { massNumber: 179 },
+            Ta: { massNumber: 181 },
+            W: { massNumber: 184 },
+            Re: { massNumber: 186 },
+            Os: { massNumber: 190 },
+            Ir: { massNumber: 192 },
+            Pt: { massNumber: 195 },
+            Au: { massNumber: 197 },
+            Hg: { massNumber: 201 },
+            Tl: { massNumber: 204 },
+            Pb: { massNumber: 207 },
+            Bi: { massNumber: 209 },
+            Po: { massNumber: 209 },
+            At: { massNumber: 210 },
+            Rn: { massNumber: 222 },
+            Fr: { massNumber: 223 },
+            Ra: { massNumber: 226 },
+            Ac: { massNumber: 227 },
+            Th: { massNumber: 232 },
+            Pa: { massNumber: 231 },
+            U: { massNumber: 238 },
+            Np: { massNumber: 237 },
+            Pu: { massNumber: 244 },
+            Am: { massNumber: 243 },
+            Cm: { massNumber: 247 },
+            Bk: { massNumber: 247 },
+            Cf: { massNumber: 251 },
+            Es: { massNumber: 252 },
+            Fm: { massNumber: 257 },
+            Md: { massNumber: 258 },
+            No: { massNumber: 259 },
+            Lr: { massNumber: 262 },
+            Rf: { massNumber: 267 },
+            Db: { massNumber: 270 },
+            Sg: { massNumber: 271 },
+            Bh: { massNumber: 270 },
+            Hs: { massNumber: 277 },
+            Mt: { massNumber: 276 },
+            Ds: { massNumber: 281 },
+            Rg: { massNumber: 280 },
+            Cn: { massNumber: 285 },
+            Nh: { massNumber: 284 },
+            Fl: { massNumber: 289 },
+            Mc: { massNumber: 288 },
+            Lv: { massNumber: 293 },
+            Ts: { massNumber: 294 },
+            Og: { massNumber: 294 }
+        };
+
+        // Funkcja obliczająca masę cząsteczkową
+        function calculateMolecularMass(compound) {
+            let totalMass = 0;
+            let regex = /([A-Z][a-z]*)(\d*)/g;
+            let match;
+            while ((match = regex.exec(compound)) !== null) {
+                let element = match[1];
+                let quantity = match[2] ? parseInt(match[2]) : 1;
+                if (elementsData[element]) {
+                    totalMass += elementsData[element].massNumber * quantity;
+                } else {
+                    return "Błąd: Nieznany pierwiastek";
+                }
+            }
+            return totalMass;
+        }
+
+        // Funkcja do obliczania masy cząsteczkowej i gramów
+        function calculateAndDisplay() {
+            let compound = document.getElementById("compound").value;
+            let moles = parseFloat(document.getElementById("NUM").value);
+            let molecularMass = calculateMolecularMass(compound);
+            
+            if (isNaN(molecularMass)) {
+                document.getElementById("odp").innerText = "Błąd: Niepoprawny wzór chemiczny.";
+                return;
+            }
+
+            let grams = molecularMass * moles;
+            document.getElementById("odp").innerText = `${grams.toFixed(2)} gramów`;
+        }
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    
+    <nav>
+        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">Chemia ogólna</button>
+        <button id="2" class="button-chemistry" onclick="goto('norg.html')">Chemia nieorganiczna</button>
+        <button id="3" class="button-chemistry" onclick="goto('org.html')">Chemia organiczna</button>
+        <button id="4" class="button-chemistry" onclick="goto('ele.html')">Elektrochemia</button>
+        <button id="5" class="button-chemistry" onclick="goto('stec.html')">Stechiometria</button>
+        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">Kontakt</button>
+        <button id="7" class="button-chemistry" onclick="goto('sett.html')">Ustawienia</button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w "Kalkulatorze dla opornych"</h1>
+        <p>Siema! Tutaj wpisz wzór chemiczny: <input id="compound" type="text" placeholder="np. H2O" onblur="calculateAndDisplay()"> a tutaj ilość moli: <input onblur="calculateAndDisplay()" id="NUM" type="number" placeholder="np. 2">, a tutaj pokaże się ile to jest gramów: <span id="odp">0</span></p>
+        <table>
+            <tr>
+                <li><a href="index.html">Menu -&gt;</a></li>
+            </tr>
+        </table>
+    </article>
+    <footer>
+        <footer>
+            <a href="https://warchem.pl">
+                <img src="png/warchem.png" alt="Warchem">
+            </a>
+        </footer>
+    </footer>
+</body>
+</html>
