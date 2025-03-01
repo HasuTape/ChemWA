@@ -6,7 +6,7 @@ function checkAnswer(input,correctAnswer) {
     
     const userAnswer = input.value.trim(); // Pobranie wartości inputa
 
-    if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+    if (userAnswer === correctAnswer) {
       const textElement = document.createElement("span");
       textElement.textContent = userAnswer;
       textElement.style.color = "black"; // Zmiana koloru na czarny
