@@ -47,8 +47,6 @@ input {
 }
 
 article {
-    margin-right: auto;
-    margin-left: auto;
     background: white;
     border: 7px solid transparent;
     background: linear-gradient(135deg, #8A2BE2, #00CED1);
@@ -127,14 +125,77 @@ button {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        gap: 5px;
+        text-align: center;
     }
 
     article {
-        width: 95%;
+        display: inline-block;
+        align-content: center;
+        width: 90%;
+        font-size: 14px;
+        margin: 0; /* Całkowicie usuń marginesy */
+        padding: 5px; /* Zostaw lekkie wypełnienie, żeby tekst nie dotykał krawędzi */
     }
 
     .button-chemistry {
         width: 100%;
-        margin: 5px 0;
+        font-size: 14px;
+        padding: 10px 20px;
     }
-}
+
+    input {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    header {
+        font-size: large;
+        padding: 5px;
+    }
+
+    .png {
+        width: 50px;
+    }
+
+    button {
+        width: 90%;
+        padding: 8px;
+    }
+    .table-container {
+        overflow-x: auto; /* Dodaje przewijanie poziome */
+        width: 100%;
+    }
+    table {
+        width: 100%; /* Dostosowuje szerokość tabeli do ekranu */
+        min-width: 100%; /* Zapewnia, że tabela nie jest większa niż ekran */
+        border-collapse: collapse; /* Usuwa zbędne odstępy */
+    }
+    th, td {
+        padding: 4px; /* Mniejsze odstępy w komórkach */
+        font-size: 12px; /* Zmniejsza czcionkę */
+        white-space: nowrap; /* Zapobiega zawijaniu tekstu w komórkach */
+    }
+    th {
+        font-size: 14px; /* Nagłówki mogą być trochę większe */
+    }
+    .table-container::-webkit-scrollbar {
+        height: 5px; /* Zmniejsza pasek przewijania */
+    }
+    td:nth-child(3), th:nth-child(3) { display: none; }
+    th, td {
+        word-wrap: break-word; /* Stare przeglądarki */
+        overflow-wrap: break-word; /* Nowoczesne przeglądarki */
+        white-space: normal; /* Pozwala na zawijanie tekstu */
+        text-align: left; /* Wyrównanie dla lepszej czytelności */
+        max-width: 100px; /* Możesz dostosować szerokość komórek */
+        font-size: 12px; /* Zmniejsza czcionkę */
+        padding: 3px; /* Zmniejsza padding */
+        max-width: 80px; /* Mniejsza szerokość */
+    }
+    html {
+        width: 100%;
+    };
+}    
