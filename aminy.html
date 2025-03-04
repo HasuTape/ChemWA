@@ -12,6 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" href="light.css">
+    <script>
+        // sprawdzamy czy przeglądarka posiada wsparcie dla service workera
+        if ('serviceWorker' in navigator) {
+            // próba instalacji
+            navigator.serviceWorker.register('/service-worker.js').then(function () {
+                console.log('Service worker zainstalowany');
+            }).catch(function (err) {
+                // jeśli coś pójdzie nie tak- konsola nam powie co trzeba poprawić
+                console.log('Service worker nie zainstalowany, sprawdź błąd:', err)
+            });
+        }
+    </script> 
     
     <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
     <script>
@@ -62,7 +74,7 @@
     <article>
         <h1>Witaj w temacie aminy</h1>
         <h3>Czym są aminy?</h3>
-        <p>Aminy to takie substancje, które zawierają grupę aminową(-NH<sub>2</sub>, -NHR lub -NR<sub>2</sub>) jaka jest to grupa zależy od tego ile wiązań jest podłączonych do azotu. Im więcej wiązań tym mniej wodorów. R oznacza grupę alkilową lub arylową.</p>
+        <p>Aminy to takie substancje, które zawierają <a href="<a href="grupyf.html">grupa</a>f.html"><a href="grupyf.html">grupę</a></a> aminową(-NH<sub>2</sub>, -NHR lub -NR<sub>2</sub>) jaka jest to <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> zależy od tego ile wiązań jest podłączonych do azotu. Im więcej wiązań tym mniej wodorów. R oznacza <a href="<a href="grupyf.html">grupa</a>f.html"><a href="grupyf.html">grupę</a></a> alkilową lub arylową.</p>
         <h3>Nazewnictwo</h3>
         <p>Do nazwy węglowodoru dodaje się przyrostek „-amina” lub przedrostek „amino-”, np.:</p>
         <ul>

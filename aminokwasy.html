@@ -12,6 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" href="light.css">
+    <script>
+        // sprawdzamy czy przeglądarka posiada wsparcie dla service workera
+        if ('serviceWorker' in navigator) {
+            // próba instalacji
+            navigator.serviceWorker.register('/service-worker.js').then(function () {
+                console.log('Service worker zainstalowany');
+            }).catch(function (err) {
+                // jeśli coś pójdzie nie tak- konsola nam powie co trzeba poprawić
+                console.log('Service worker nie zainstalowany, sprawdź błąd:', err)
+            });
+        }
+    </script> 
     
     <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
     <script>
@@ -61,12 +73,85 @@
     <article>
         <h1>Witaj w aminokwasach!</h1>
         <p>Nie lubie tego tematu. Biolchemowców witam, a reszte zachęcam to kliknięcia <a href="org.html">tutaj😀</a>. Ci którzy nie zostali odsiani zapraszam do wspólnej przeprawy przez ten temat!</p>
-        <p>Amino kwasy to substancje z grupą aminową i karboksylową.</p>
+        <h3>Co to aminokwasy?</h3>
+        <p>Amino kwasy to substancje z <a href="grupyf.html">grupą</a> aminową i karboksylową. Jak np. glicyna:</p>
         <img class="png" src="png/glicyna.png" alt="glicyna">
+        <h3>Amino kwasy dzielą sie na:</h3>
+        <ul>
+            <li>
+                Białkowe(Wzór ogólny: <img src="png/glicynaR.png" alt="glicynaR" class="png">)
+            </li>
+            <li>
+                Niebiałkowe(Te które nie są białkowe)
+            </li>
+        </ul>
         <h3>Jaką funkcje mają aminokwasy?</h3>
-        <p>Z aminokwasów są zbudowane białka, którego przykładem jest taki prosty <a href="tytyna.html" target="_blank">związek</a>. Ale my nie o bialkach tylko o aminokwasach.</p>
-        <p>Aminokwasy mają taką ciekawą wlaściwość że są kwasami. </p>
-        
+        <p>Z aminokwasów białkowych są zbudowane białka, którego przykładem jest taki prosty <a href="tytyna.html" target="_blank">związek</a>. Ale my nie o bialkach tylko o aminokwasach.</p>
+        <p>Aminokwasy mają taką ciekawą wlaściwość że są amfoteryczne co samo w sobie nie jest ciekawe ale występują w kationie(zasadowym), anionie(kwasowym) lub jonie obojniaczym.</p>
+        <h3>Jon obojniaczy?</h3>
+        <p>NH<sub>2</sub>-CH<sub>2</sub>-COOH &rarr; <sup>+</sup>NH<sub>3</sub>-CH<sub>2</sub>-COO<sup>-</sup></p>
+        <p>Co jest? <a href="https://youtu.be/7iiANZvz8Tg?si=2-VH0xGJdlxEqdyn">Plus i minus?</a> Tak!</p>
+        <h3>Punkt izoelektryczny:</h3>
+        <p>Jest to wartość pH w której aminokwas ma największe stężenie jonów obojniaczych.</p>
+        <h3>Jakie warto znać aminokwasy?</h3>
+        <table>
+            <tr>
+                <th>
+                    Nazwa
+                </th>
+                <th>
+                    Wzór
+                </th>
+                <th>
+                    Skrót
+                </th>
+                <th>
+                    Symbol
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Glicyna
+                </th>
+                <th>
+                    <img class="png" src="png/glicyna.png" alt="glicyna">
+                </th>
+                <th>
+                    Gly
+                </th>
+                <th>
+                    G
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Alanina
+                </th>
+                <th>
+                    <img class="png" src="png/alanina.png" alt="alanina">
+                </th>
+                <th>
+                    Ala
+                </th>
+                <th>
+                    A
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    Cysteina
+                </th>
+                <th>
+                    <img class="png" src="png/cysteina.png" alt="alanina">
+                </th>
+                <th>
+                    Cys
+                </th>
+                <th>
+                    C
+                </th>
+            </tr>
+        </table>
     </article>
     <footer>
     <footer>

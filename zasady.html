@@ -12,6 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" href="light.css">
+    <script>
+        // sprawdzamy czy przeglądarka posiada wsparcie dla service workera
+        if ('serviceWorker' in navigator) {
+            // próba instalacji
+            navigator.serviceWorker.register('/service-worker.js').then(function () {
+                console.log('Service worker zainstalowany');
+            }).catch(function (err) {
+                // jeśli coś pójdzie nie tak- konsola nam powie co trzeba poprawić
+                console.log('Service worker nie zainstalowany, sprawdź błąd:', err)
+            });
+        }
+    </script> 
     <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
     <script>
         const theme = localStorage.getItem("theme");
@@ -45,17 +57,17 @@
     <br><br><br><br>
     <article>
         <h1>Witaj w temacie zasady</h1>
-        <p>Siema! Dziś opowiem, czym jest zasada (ang. base). Zasada (ang. base) to nie zasada (ang. rule), to ważne. Zasada to przeciwieństwo kwasów. Jak już wiecie, kwasy dysocjują na kationy wodorowe (H<sup>+</sup>) i aniony reszty kwasowej. Zasady działają trochę inaczej. Dysocjują na kation metalu i anion wodorotlenkowy (OH<sup>-</sup>). Skoro to wiemy, to teraz czym jest grupa OH? To tzw. grupa hydroksylowa. Czy wszystkie wodorotlenki (bo tak nazywamy związki w chemii nieorganicznej zawierające grupy hydroksylowe) są zasadami? Nie! Logicznie rzecz biorąc, aby coś dysocjowało, musi być w roztworze (lub roztopione, ale o tym nie teraz). Jeśli np. Al(OH)<sub>3</sub> (wodorotlenek glinu) się nie rozpuszcza, to nie jest zasadą, bo nie dysocjuje na jony OH<sup>-</sup>.</p>
+        <p>Siema! Dziś opowiem, czym jest zasada (ang. base). Zasada (ang. base) to nie zasada (ang. rule), to ważne. Zasada to przeciwieństwo kwasów. Jak już wiecie, kwasy dysocjują na kationy wodorowe (H<sup>+</sup>) i aniony reszty kwasowej. Zasady działają trochę inaczej. Dysocjują na kation metalu i anion wodorotlenkowy (OH<sup>-</sup>). Skoro to wiemy, to teraz czym jest <a href="<a href="grupyf.html">grupa</a>f.html"></a>grupa</a> OH? To tzw. <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> hydroksylowa. Czy wszystkie wodorotlenki (bo tak nazywamy związki w chemii nieorganicznej zawierające <a href="grupyf.html">grupa</a> hydroksylowe) są zasadami? Nie! Logicznie rzecz biorąc, aby coś dysocjowało, musi być w roztworze (lub roztopione, ale o tym nie teraz). Jeśli np. Al(OH)<sub>3</sub> (wodorotlenek glinu) się nie rozpuszcza, to nie jest zasadą, bo nie dysocjuje na jony OH<sup>-</sup>.</p>
         <h3>Trzeba zapamiętać wszystkie rozpuszczalności na pamięć?</h3>
-        <p>Jeszcze raz: Nie! Wystarczy znać metale 1 i 2 grupy (tak, wodór też tam jest, ale jak można się domyślić, OH<sup>-</sup> + H<sup>+</sup> → H<sub>2</sub>O). Każdy wodorotlenek tych metali jest rozpuszczalny, poza berylem (Be) i magnezem (Mg).</p>
+        <p>Jeszcze raz: Nie! Wystarczy znać metale 1 i 2 <a href="grupyf.html">grupa</a> (tak, wodór też tam jest, ale jak można się domyślić, OH<sup>-</sup> + H<sup>+</sup> → H<sub>2</sub>O). Każdy wodorotlenek tych metali jest rozpuszczalny, poza berylem (Be) i magnezem (Mg).</p>
         <h3>Są jakieś wyjątki?</h3>
-        <p>Oczywiście! Mówiłem, że potrzebny jest kation metalu i anion wodorotlenkowy, ale istnieje coś takiego jak NH<sub>4</sub><sup>+</sup>, czyli jon amonowy. Powstaje on po rozpuszczeniu w wodzie amoniaku (NH<sub>3</sub>). No czekaj, jak może być zasadowy, skoro w amoniaku nie ma grupy OH? To taki trik. Jak możecie zauważyć, NH<sub>3</sub> i NH<sub>4</sub><sup>+</sup> różnią się czymś (nie tylko ładunkiem). <label class="spoiler">Ilością wodoru</label>. To ważne, ponieważ dzięki temu roztwór jest zasadowy. Jeżeli pojawia się wodór, to nie „zrespił się” (bo to niemożliwe), tylko zabrał go z wody. A mówiłem, co zostaje po zabraniu z wody wodoru. Jeśli macie problemy z wyobraźnią, to już pokazuję. Skreśliłem wodór:</p>
+        <p>Oczywiście! Mówiłem, że potrzebny jest kation metalu i anion wodorotlenkowy, ale istnieje coś takiego jak NH<sub>4</sub><sup>+</sup>, czyli jon amonowy. Powstaje on po rozpuszczeniu w wodzie amoniaku (NH<sub>3</sub>). No czekaj, jak może być zasadowy, skoro w amoniaku nie ma <a href="grupyf.html">grupa</a> OH? To taki trik. Jak możecie zauważyć, NH<sub>3</sub> i NH<sub>4</sub><sup>+</sup> różnią się czymś (nie tylko ładunkiem). <label class="spoiler">Ilością wodoru</label>. To ważne, ponieważ dzięki temu roztwór jest zasadowy. Jeżeli pojawia się wodór, to nie „zrespił się” (bo to niemożliwe), tylko zabrał go z wody. A mówiłem, co zostaje po zabraniu z wody wodoru. Jeśli macie problemy z wyobraźnią, to już pokazuję. Skreśliłem wodór:</p>
         <ul>
             <li style="color: red;">H</li>
             <li>H</li>
             <li>O</li>
         </ul>
-        <p>Nie do wiary! Powstała grupa OH! Mamy zasadę! Czyli po wysuszeniu roztworu powstanie NH<sub>4</sub>OH? Nie. 💀 Ta substancja nie istnieje/nie została uzyskana. Jeśli chcecie zapisać wodę amoniakalną (roztwór amoniaku), w chemii zapisuje się to tak:</p>
+        <p>Nie do wiary! Powstała <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> OH! Mamy zasadę! Czyli po wysuszeniu roztworu powstanie NH<sub>4</sub>OH? Nie. 💀 Ta substancja nie istnieje/nie została uzyskana. Jeśli chcecie zapisać wodę amoniakalną (roztwór amoniaku), w chemii zapisuje się to tak:</p>
         <h5>NH<sub>3</sub> • H<sub>2</sub>O</h5>
         <p>Dobra, wiemy, co jest wyjątkiem, a teraz jak powstają. Zasady mają kilka sposobów otrzymywania:</p>
         <ul>
@@ -63,7 +75,7 @@
             <li>Wodorek aktywnego metalu + H<sub>2</sub>O &rightarrow; Zasada + H<sub>2</sub></li>
             <li>Tlenek aktywnego metalu + H<sub>2</sub>O &rightarrow; Zasada</li>
         </ul>
-        <p>Jako aktywny metal mam na myśli metale 1 i 2 grupy, oczywiście nie licząc boru i berylu.</p>
+        <p>Jako aktywny metal mam na myśli metale 1 i 2 <a href="grupyf.html">grupa</a>, oczywiście nie licząc boru i berylu.</p>
         <p>To wszystko, co miałem do powiedzenia. Na dole macie następny temat.</p>
         <table>
             <tr>
