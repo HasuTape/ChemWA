@@ -11,19 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link id="theme-style" rel="stylesheet" href="light.css">
-    <script>
-        // sprawdzamy czy przeglądarka posiada wsparcie dla service workera
-        if ('serviceWorker' in navigator) {
-            // próba instalacji
-            navigator.serviceWorker.register('/service-worker.js').then(function () {
-                console.log('Service worker zainstalowany');
-            }).catch(function (err) {
-                // jeśli coś pójdzie nie tak- konsola nam powie co trzeba poprawić
-                console.log('Service worker nie zainstalowany, sprawdź błąd:', err)
-            });
-        }
-    </script> 
+    <link id="theme-style" rel="stylesheet" href="light.css"> 
     
     <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
     <script>
@@ -47,43 +35,31 @@
     </header>
     
     <nav>
-        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">
-            Chemia ogólna
-        </button> 
-        <button id="2" class="button-chemistry" onclick="goto('norg.html')">
-            Chemia nieorganiczna
-        </button> 
-        <button id="3" class="button-chemistry" onclick="goto('org.html')">
-            Chemia organiczna
-        </button> 
-        <button id="4" class="button-chemistry" onclick="goto('ele.html')">
-            Elektrochemia
-        </button> 
-        <button id="5" class="button-chemistry" onclick="goto('stec.html')">
-            Stechiometria
-        </button>
-        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">
-            Kontakt
-        </button>
-        <button id="7" class="button-chemistry" onclick="goto('sett.html')">
-            Ustawienia
-        </button>
+        
+        <button id="1" class="button-chemistry" onclick="goto('ogl.html')">Chemia ogólna</button>
+        <button id="2" class="button-chemistry" onclick="goto('norg.html')">Chemia nieorganiczna</button>
+        <button id="3" class="button-chemistry" onclick="goto('org.html')">Chemia organiczna</button>
+        <button id="4" class="button-chemistry" onclick="goto('ele.html')">Elektrochemia</button>
+        <button id="5" class="button-chemistry" onclick="goto('stec.html')">Stechiometria</button>
+        <button id="6" class="button-chemistry" onclick="goto('praktyka.html')">Praktyka</button>
+        <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">Kontakt</button>
+        <button id="7" class="button-chemistry" onclick="goto('sett.html')">Ustawienia</button>
     </nav>
     <br><br><br><br>
     <article>
         <h1>Witaj w temacie NITRY</h1>
         <h3>Czym są węglowodory NITRY?</h3>
-        <p>W ogóle zacznijmy od tego czemu pisze to capslockiem? Jest to mój ulubiony temat od 10 minut. Więc co to jest? Są to substancje z <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> nitrową(-NO<sub>2</sub>)</p>
+        <p>W ogóle zacznijmy od tego czemu pisze to capslockiem? Jest to mój ulubiony temat od 10 minut. Więc co to jest? Są to substancje z <a href="grupyf.html">grupa</a>f.html">grupa</a> nitrową(-NO<sub>2</sub>)</p>
         <h3>Co w tym takiego fajnego?</h3>
         <p>Te substancje mają silny charakter wybuchowy🤤🤤🤤</p>
         <h3>Jak pozyskać?</h3>
         <p>Wykorzystuje się do tego tzw. mieszaninę nitrującą.</p>
         <h3>Co to mieszanina nitrująca?</h3>
-        <p>Jest to H<sub>2</sub>SO<sub>4</sub> razem z HNO<sub>3</sub>. W obecności tego roztworu substancje zabierają z kwasu azotowego(V) <a href="<a href="grupyf.html">grupa</a>f.html"><a href="grupyf.html">grupę</a></a> nitrową co w efekcie ubocznym daje wodę.</p>
+        <p>Jest to H<sub>2</sub>SO<sub>4</sub> razem z HNO<sub>3</sub>. W obecności tego roztworu substancje zabierają z kwasu azotowego(V) <a href="grupyf.html">grupa</a>f.html"><a href="grupyf.html">grupę</a> nitrową co w efekcie ubocznym daje wodę.</p>
         <h3>Reakcja nitrowania:</h3>
         <p>CH<sub>4</sub> + HNO<sub>3</sub> + H<sub>2</sub>SO<sub>4</sub> &rarr; CH<sub>3</sub>NO<sub>2</sub></p>
         <h3>Przykłady nitrów:</h3>
-        <p>Znacie nitroglicerynę🤤 <label class="spoiler">To ona nie jest nitrem😭</label> ale czemu? Jest to dlatego że <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> nitrowa łączy się z łańcuchem głównym po przez tlen a nie azot co czyni ją odrazu azotanem.</p>
+        <p>Znacie nitroglicerynę🤤 <label class="spoiler">To ona nie jest nitrem😭</label> ale czemu? Jest to dlatego że <a href="grupyf.html">grupa</a>f.html">grupa</a> nitrowa łączy się z łańcuchem głównym po przez tlen a nie azot co czyni ją odrazu azotanem.</p>
         <p>Jest jeszcze coś takiego jak 2,4,6-trinitrotoulen jest to pochodna toulenu która wygląda tak:</p>
         <img src="png/tnt.png" alt="tnt" style="width: 300px; height: auto; justify-self: center;">
         <p>Wygląda znajomo? Wiem przecież że nie🙄. Jest to substancja znana pod pseudonimem TNT albo trotyl🤤</p>
@@ -97,8 +73,8 @@
                 Jak wybucha to nie ma minusów
             </li>
         </ul>
-        <p>A tak serio ciekawą substancją z <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> nitrową jest nitrometan, która jest magiczna bo sprawia że ogień jest biały...</p> <!--Oto easter egg: u-->
-        <p>W sumie tylko tyle mam do powiedzenia ale uwieżcie że będzie jeszcze więcej! Na dole macie kolejny temat. Mam nadzieje że <a href="<a href="grupyf.html">grupa</a>f.html">grupa</a> nitrowa was tak samo fascynuje jak mnie! Pozdrawiam!</p>
+        <p>A tak serio ciekawą substancją z <a href="grupyf.html">grupa</a>f.html">grupa</a> nitrową jest nitrometan, która jest magiczna bo sprawia że ogień jest biały...</p> <!--Oto easter egg: u-->
+        <p>W sumie tylko tyle mam do powiedzenia ale uwieżcie że będzie jeszcze więcej! Na dole macie kolejny temat. Mam nadzieje że <a href="grupyf.html">grupa</a>f.html">grupa</a> nitrowa was tak samo fascynuje jak mnie! Pozdrawiam!</p>
         <table>
             <tr>
                 <li>

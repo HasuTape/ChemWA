@@ -11,19 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link id="theme-style" rel="stylesheet" href="light.css">
-    <script>
-        // sprawdzamy czy przeglądarka posiada wsparcie dla service workera
-        if ('serviceWorker' in navigator) {
-            // próba instalacji
-            navigator.serviceWorker.register('/service-worker.js').then(function () {
-                console.log('Service worker zainstalowany');
-            }).catch(function (err) {
-                // jeśli coś pójdzie nie tak- konsola nam powie co trzeba poprawić
-                console.log('Service worker nie zainstalowany, sprawdź błąd:', err)
-            });
-        }
-    </script> 
+    <link id="theme-style" rel="stylesheet" href="light.css"> 
     <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
     <script>
         const theme = localStorage.getItem("theme");
@@ -206,6 +194,7 @@
         <button id="3" class="button-chemistry" onclick="goto('org.html')">Chemia organiczna</button>
         <button id="4" class="button-chemistry" onclick="goto('ele.html')">Elektrochemia</button>
         <button id="5" class="button-chemistry" onclick="goto('stec.html')">Stechiometria</button>
+        <button id="6" class="button-chemistry" onclick="goto('praktyka.html')">Praktyka</button>
         <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">Kontakt</button>
         <button id="7" class="button-chemistry" onclick="goto('sett.html')">Ustawienia</button>
     </nav>

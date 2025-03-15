@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ChemWA">
     <meta name="author" content="Wiktor Woźny">
-    <title>Chlorowcopochodne</title>
+    <title>Alkany</title>
     <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
     <meta name="keywords" content="ChemWA, nauka chemii, chemia w ciekawy sposób, interaktywne zadania chemiczne, chemiczne gry edukacyjne, chemiczne quizy, chemiczne wyzwania, chemia dla uczniów, chemia dla studentów, chemia online, zabawna chemia, chemiczne eksperymenty, chemiczne animacje, chemiczne filmy edukacyjne, chemiczne infografiki, chemiczne komiksy, chemiczne ciekawostki, chemiczne zagadki, chemiczne łamigłówki, chemiczne projekty, chemiczne laboratoria domowe, chemiczne doświadczenia, chemiczne eksperymenty w domu, chemiczne tutoriale, chemiczne poradniki, chemiczne kursy online, chemiczne lekcje, chemiczne materiały edukacyjne, chemiczne zasoby, chemiczne narzędzia, chemiczne aplikacje, chemiczne technologie edukacyjne, chemiczne innowacje w nauczaniu, chemiczne metody nauczania, chemiczne techniki nauczania, chemiczne strategie edukacyjne, chemiczne programy nauczania, chemiczne plany lekcji, chemiczne scenariusze zajęć, chemiczne projekty edukacyjne, chemiczne inicjatywy edukacyjne, chemiczne społeczności edukacyjne">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,14 +29,12 @@
         }
     </script>
     <script src="script.js" defer></script>
-</head>
 <body>
     <header>
         <h1>Witaj w ChemWA</h1>
     </header>
     
     <nav>
-        
         <button id="1" class="button-chemistry" onclick="goto('ogl.html')">Chemia ogólna</button>
         <button id="2" class="button-chemistry" onclick="goto('norg.html')">Chemia nieorganiczna</button>
         <button id="3" class="button-chemistry" onclick="goto('org.html')">Chemia organiczna</button>
@@ -46,34 +44,32 @@
         <button id="6" class="button-chemistry" onclick="goto('kontakt.html')">Kontakt</button>
         <button id="7" class="button-chemistry" onclick="goto('sett.html')">Ustawienia</button>
     </nav>
-    <br><br><br><br>
     <article>
-        <h1>Witaj w temacie chlorowcopochodne</h1>
-        <h3>Zacznijmy od tego czym one są?</h3>
-        <p>Są to pochodne węglowodorów zawierająca grupe -X gdzie X oznacza halogen.</p>
-        <h3>Pozyskiwanie:</h3>
-        <p>Chlorowce pozyfkujemy na wiele sposobow np. 
-            <ul>
-                <li>
-                    Addycja: CH<sub>2</sub>=CH<sub>2</sub> + Cl<sub>2</sub> &rarr; CH<sub>2</sub>Cl-CH<sub>2</sub>Cl
-                    Tutaj wiązanie węgiel-węgiel pęka i w wolne miejsce wchodzi chlor.
-                </li>
-                <li>
-                    Substytucja: CH<sub>2</sub>=CH<sub>2</sub> + 2Cl &rarr; CH<sub>2</sub>Cl-<CH<Sub>Cl</Sub>
-                </li>
-            </ul>
-        </p>
-        <h3>Jakim reakcją podlegają:</h3>
+        <h1>Witaj w temacie alkany</h1>
+        <h3>Czym są alkany?</h3>
+        <p>Alkany (węglowodory <a href="alkany.html">nasycone</a>) to węglowodory (czyli związki węgla i wodoru), które wyróżnia to, że nie posiadają wiązań wielokrotnych.</p>
+        <p>Jeżeli alkan ma jeden atom węgla, nazywa się metan.</p>
         <ul>
-            <li>Substytucja: CH<sub>3</sub>Cl + OH<Sup>-</Sup> &rarr; CH<sub>3</sub>OH + Cl<sub>-</sub></li>
-            <li>Elminacja(dehydrohalogenacja): CH<sub>3</sub>=CH<sub>2</sub>Cl &rarr; CH<sub>2</sub>=CH<sub>2</sub> + HCl</li>
+            <li>2 węgle - <input type="text" onblur="checkAnswer(this,'etan')"></li><br>
+            <li>3 węgle - <input type="text" onblur="checkAnswer(this,'propan')"></li><br>
+            <li>4 węgle - <input type="text" onblur="checkAnswer(this,'butan')"></li><br>
+            <li>5 węgli - <input type="text" onblur="checkAnswer(this,'pentan')"></li><br>
+            <li>6 węgli - <input type="text" onblur="checkAnswer(this,'heksan')"></li><br>
+            <li>7 węgli - <input type="text" onblur="checkAnswer(this,'heptan')"></li><br>
+            <li>8 węgli - <input type="text" onblur="checkAnswer(this,'oktan')"></li><br>
+            <li>9 węgli - <input type="text" onblur="checkAnswer(this,'nonan')"></li><br>
+            <li>10 węgli - <input type="text" onblur="checkAnswer(this,'dekan')"></li>
         </ul>
-        <p>To tyle z tego tematu, na dole macie nastepny.</p>
+        <p>Alkany mają wzór ogólny C<sub>n</sub>H<sub>2n+2</sub>, co oznacza, że dla heptanu (7 atomów węgla) po podstawieniu do wzoru otrzymujemy C<sub>7</sub>H<sub>2*7+2</sub> = C<sub>7</sub>H<sub>14+2</sub> = C<sub>7</sub>H<sub>16</sub>.</p>
+        <p>Alkany zawierające od 1 do 4 atomów węgla są gazami, od 5 do 16 - cieczami, a te o większej liczbie atomów węgla - ciałami stałymi.</p>
+        <div class="ciekawostka">
+            <h3>Krowy i metan?</h3>
+            <p>Krowy i inne zwierzęta hodowlane odpowiadają za 5% emisji metanu, który jest gazem cieplarnianym. I co najważniejsze silniejszym od tlenku węgla(IV). <a href="png/świnka peppa puzzle.jpg">TheWeganka</a> jednak o naszą planete nie dba</p>
+        </div>
+        <p>To tyle z tego tematu. Póki co tematy będą krótkie, ale to ostatni. Na dole klasycznie następny temat.</p>
         <table>
             <tr>
-                <li>
-                    <a href="alkohole.html">Następny temat -&gt;</a>
-                </li>
+                <li><a href="nienasycone.html">Następny temat -&gt;</a></li>
             </tr>
         </table>
     </article>

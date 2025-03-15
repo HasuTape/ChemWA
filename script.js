@@ -13,7 +13,7 @@ function checkAnswer(input,correctAnswer) {
       
       input.replaceWith(textElement); // Zamiana inputa na tekst
     } else {
-      alert("Niepoprawna odpowiedź! Spróbuj ponownie.");
+        
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
