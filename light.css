@@ -94,7 +94,7 @@ button
     height: min-content;
     align-self: center;
 }
-.button-chemistry {
+.guzik {
     background: linear-gradient(135deg, #8A2BE2, #00CED1);
     border: none;
     color: white;
@@ -108,12 +108,12 @@ button
     transition: background 0.3s, transform 0.3s;
 }
 
-.button-chemistry:hover {
+.guzik:hover {
     background: linear-gradient(135deg, #7A1B9D, #00B2B2);
     transform: scale(1.05);
 }
 
-.button-chemistry:active {
+.guzik:active {
     transform: scale(0.95);
 }
 .png
@@ -138,7 +138,7 @@ button
         padding: 5px; /* Zostaw lekkie wypełnienie, żeby tekst nie dotykał krawędzi */
     }
 
-    .button-chemistry {
+    .guzik {
         width: 100%;
         font-size: 14px;
         padding: 10px 20px;
