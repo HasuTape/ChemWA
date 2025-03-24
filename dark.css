@@ -48,6 +48,7 @@ input
 }
 article
 {
+    color: black;
     margin-right: auto;
     margin-left: 25%;
     background: white;
@@ -97,7 +98,7 @@ button
 .guzik {
     background: linear-gradient(135deg, #8A2BE2, #00CED1);
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -120,6 +121,27 @@ button
 {
     width: 75px;
     height: auto;
+}
+.isotope {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+  
+.isotope::before {
+    content: attr(data-mass);
+    position: absolute;
+    top: -0.5em;
+    left: attr(data-move);
+    font-size: 0.6em;
+}
+  
+.isotope::after {
+    content: attr(data-atomic);
+    position: absolute;
+    bottom: -0.3em;
+    left: -6px;
+    font-size: 0.6em;
 }
 /* Media Queries */
 @media (max-width: 768px) {
