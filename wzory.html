@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="Wiktor Woźny">
+    <title>Adehydy</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="ChemWA, nauka chemii, chemia w ciekawy sposób, interaktywne zadania chemiczne, chemiczne gry edukacyjne, chemiczne quizy, chemiczne wyzwania, chemia dla uczniów, chemia dla studentów, chemia online, zabawna chemia, chemiczne eksperymenty, chemiczne animacje, chemiczne filmy edukacyjne, chemiczne infografiki, chemiczne komiksy, chemiczne ciekawostki, chemiczne zagadki, chemiczne łamigłówki, chemiczne projekty, chemiczne laboratoria domowe, chemiczne doświadczenia, chemiczne eksperymenty w domu, chemiczne tutoriale, chemiczne poradniki, chemiczne kursy online, chemiczne lekcje, chemiczne materiały edukacyjne, chemiczne zasoby, chemiczne narzędzia, chemiczne aplikacje, chemiczne technologie edukacyjne, chemiczne innowacje w nauczaniu, chemiczne metody nauczania, chemiczne techniki nauczania, chemiczne strategie edukacyjne, chemiczne programy nauczania, chemiczne plany lekcji, chemiczne scenariusze zajęć, chemiczne projekty edukacyjne, chemiczne inicjatywy edukacyjne, chemiczne społeczności edukacyjne">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="light.css"> 
+    <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
+    <script>
+        const theme = localStorage.getItem("theme");
+        const spoiler = localStorage.getItem("spoiler");
+        if (theme === "dark") {
+            document.getElementById("theme-style").href = "dark.css";
+        } else {
+            document.getElementById("theme-style").href = "light.css";
+        }
+        if (spoiler === "false") {
+            document.getElementById("spoiler-style").href = "no-spoiler.css";
+        } else {
+            document.getElementById("spoiler-style").href = "spoiler.css";
+        }
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    
+    <nav>
+        <button id="1" class="guzik" onclick="goto('ogl.html')">Chemia ogólna</button>
+        <button id="2" class="guzik" onclick="goto('norg.html')">Chemia nieorganiczna</button>
+        <button id="3" class="guzik" onclick="goto('org.html')">Chemia organiczna</button>
+        <button id="4" class="guzik" onclick="goto('ele.html')">Elektrochemia</button>
+        <button id="4" class="guzik" onclick="goto('nuke.html')">Chemia atomowa</button>
+        <button id="5" class="guzik" onclick="goto('stec.html')">Chemia obliczeniowa</button>
+        <button id="6" class="guzik" onclick="goto('praktyka.html')">Praktyka</button>
+        <button id="6" class="guzik" onclick="goto('kontakt.html')">Kontakt</button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w temacie wzory</h1>
+        <p>Elo! Ten temet to taki temat który jest niezbędny do kontynuowania nauki chemii.</p>
+        <h3>Czym jest wzór?</h3>
+        <p>To jest zapis który nie wymaga znania nazwy związku tylko jego strukture.</p>
+        <h3>Jakie wyróżniamy wzory?</h3>
+        <ol>
+            <li>
+                Sumaryczny
+            </li>
+            <li>
+                Empiryczny
+            </li>
+            <li>
+                Grupowy
+            </li>
+            <li>
+                Strukturalny
+            </li>
+            <li>
+                Półstrukturalny
+            </li>
+            <li>
+                Szkieletowy
+            </li>
+        </ol>
+        <h3>Sumaryczny</h3>
+        <p>Sumaryczny jak sama nazwa wskazuje jest to suma, suma atomów. Np. Kwas siarkowy(VI) składa sie z 2 wodorów(H), 4 tlenów(O) i jednej siarki(S). Więc zapis będzie wygłądał tak: H<sub>2</sub>SO<sub>4</sub> Liczby na dole(w indeksie stechiometrycznym) oznaczają ile jest konkretnego atomu który jest zapisany po lewej.</p>
+        <p>We Wzorach kiedy jakaś grupa np. OH powtarza sie jak w wodorotlenku magnezu(1 magnez 2 grupy OH(Wodorotlenek)) zapisuje sie Mg(OH)<sub>2</sub> Jak widac OH jest w nawiasie z indeksem przed. Oznacza to ze caly nawias jest 2 razy.</p>
+        <h3>Empiryczny</h3>
+        <p>Nazwa 'empiryczny' moze duzo nie mówi ale ten wzór pokazuje najprostrzy stosunek atomów np. eten(C<sub>2</sub>H<sub>4</sub>) zapisany by był CH<sub>2</sub>. Aby uzyskać taki wzór wystardzy podzielic wszystkie indeksy przez wspólny dzielmnik tak jak tutaj przez 2. Po co ten wzór? Dalej nie wiem...</p>
+        <h3>Grupowy</h3>
+        <p>Wzór grupowy polega na podzieleniu na grupy wzór. Zamiast C<sub>4</sub>H<sub>10</sub> zapisać: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> widac że to 4 grupy metylowe pod rząd. Jest to o wiele dokładniejszy wzór. Czemu? W chemii organicznej wzory sumaryczne są prawie żę bezuzyteczne przez zjawiskoizomerii polegające na tym że jeden związek może mieć inną strukture jak np. C<sub>4</sub>H<sub>10</sub> może być: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>CH<sub>3</sub> jak i CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>3</sub> (nawias oznacza ze nie jest w jednym łańcuchu tylko odstaje. Widać będzie w następnym przykładzie.)</p>
+        <h3>Strukturalny</h3>
+        <p>Najdokładniejszy wzór. Pokazuje on pełną strukture związku. przykładem będzie też butan C<sub>4</sub>H<sub>10</sub> jego struktura wyglada tak: <img src="png/butan.png" alt="Butan" class="png"> lub <img src="png/izopropan.png" alt="izopropan" class="png"> widać w tym wzorze to że jedna grupa odchodzi w bok.</p>
+        <h3>Półstrukturalny</h3>
+        <p>Jest to grupowy i strukturalny połączony: <img src="png/izopropan ps.png" alt="izopropan" class="png"> chodzi o to że struktura jest pokazana ale jest skrócona do grup.</p>
+        <h3>Szkieletowy</h3>
+        <p>Szkieletowy to wgl jest super: <img src="png/1,2-dibromopropan.png" alt="1,2-dibromopropan" class="png"> w miejsciu złamań lini jest grupa metylowa CH<sub>x</sub> x=4-n n-liczba wiązan tej grupy metylowej</p>
+        <table>
+            <tr>
+                <li><a href="reakcje.html">Następny temat -></a></li>
+            </tr>
+        </table>
+    </article>
+    <footer>
+    <footer>
+        <a href="https://warchem.pl">
+            <img src="png/warchem.png" style="width: 100%;" alt="Warchem">
+        </a>
+    </footer>
+</body>
+</html>

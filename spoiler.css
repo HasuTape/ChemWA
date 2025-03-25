@@ -1,2 +1,2 @@
-.spoiler { background-color: #ccc; color: transparent; cursor: pointer; display: inline; } 
-.spoiler:hover { color: black; }
+.spoiler { margin: 3px; background: #000; color: transparent; cursor: pointer; display: inline; } 
+.spoiler:hover { color: rgb(255, 255, 255); }

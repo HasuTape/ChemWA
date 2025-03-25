@@ -123,26 +123,33 @@ button
     height: auto;
 }
 .isotope {
-    position: relative;
-    display: inline-block;
-    margin: 20px;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 0.3em;
+  position: relative;
 }
-  
-.isotope::before {
-    content: attr(data-mass);
-    position: absolute;
-    top: -0.5em;
-    left: -6px;
-    font-size: 0.6em;
+
+.symbol {
+  font-size: 1.2em;
+  padding: 0 0.1em;
 }
-  
-.isotope::after {
-    content: attr(data-atomic);
-    position: absolute;
-    bottom: -0.3em;
-    left: -6px;
-    font-size: 0.6em;
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  margin-left: 0.2em;
 }
+
+sup, sub {
+  font-size: 0.6em;
+  position: relative;
+  left: 0;
+  vertical-align: baseline;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     nav {
