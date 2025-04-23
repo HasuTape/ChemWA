@@ -148,6 +148,37 @@ button
   }
   #result { margin-top: 20px; }
   #hint { margin-top: 20px; font-size: 18px; color: #333; }
+
+.isotope{
+    position: relative;
+    display: block;
+    width: 115px;
+    float: left;
+    top: -15px;
+}
+.z{
+    display: block;
+    width: 40px;
+    position: relative;
+    top: 10px;
+    left: 24px;
+    text-align: right;
+}
+.a
+{
+    display: inline-block;
+    width: 40px;
+    position: relative;
+    top: 2px;
+    left: 24px;
+    text-align: right;
+} 
+.symbol
+{
+    display: block;
+    width: 50px;
+    float: inline-end;
+}
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
