@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChemWA">
+    <meta name="author" content="HasuTapeKg">
+    <title>Tiole</title>
+    <link rel="icon" href="https://twojastrona.pl/favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="ChemWA, nauka chemii, chemia w ciekawy sposób, interaktywne zadania chemiczne, chemiczne gry edukacyjne, chemiczne quizy, chemiczne wyzwania, chemia dla uczniów, chemia dla studentów, chemia online, zabawna chemia, chemiczne eksperymenty, chemiczne animacje, chemiczne filmy edukacyjne, chemiczne infografiki, chemiczne komiksy, chemiczne ciekawostki, chemiczne zagadki, chemiczne łamigłówki, chemiczne projekty, chemiczne laboratoria domowe, chemiczne doświadczenia, chemiczne eksperymenty w domu, chemiczne tutoriale, chemiczne poradniki, chemiczne kursy online, chemiczne lekcje, chemiczne materiały edukacyjne, chemiczne zasoby, chemiczne narzędzia, chemiczne aplikacje, chemiczne technologie edukacyjne, chemiczne innowacje w nauczaniu, chemiczne metody nauczania, chemiczne techniki nauczania, chemiczne strategie edukacyjne, chemiczne programy nauczania, chemiczne plany lekcji, chemiczne scenariusze zajęć, chemiczne projekty edukacyjne, chemiczne inicjatywy edukacyjne, chemiczne społeczności edukacyjne">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Lemon&family=Metamorphous&family=Mogra&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sigmar&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="light.css"> 
+    
+    <link id="spoiler-style" rel="stylesheet" href="spoiler.css">
+    <script>
+        const theme = localStorage.getItem("theme");
+        const spoiler = localStorage.getItem("spoiler");
+        if (theme === "dark") {
+            document.getElementById("theme-style").href = "dark.css";
+        } else {
+            document.getElementById("theme-style").href = "light.css";
+        }
+        if (spoiler === "false") {
+            document.getElementById("spoiler-style").href = "no-spoiler.css";
+        } else {
+            document.getElementById("spoiler-style").href = "spoiler.css";
+        }
+    </script>
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Witaj w ChemWA</h1>
+    </header>
+    
+    <nav>
+        
+        <button id="1" class="guzik" onclick="goto('ogl.html')">Chemia ogólna</button>
+        <button id="2" class="guzik" onclick="goto('norg.html')">Chemia nieorganiczna</button>
+        <button id="3" class="guzik" onclick="goto('org.html')">Chemia organiczna</button>
+        <button id="4" class="guzik" onclick="goto('ele.html')">Elektrochemia</button>
+        <button id="4" class="guzik" onclick="goto('nuke.html')">Chemia atomowa</button>
+        <button id="5" class="guzik" onclick="goto('stec.html')">Chemia obliczeniowa</button>
+        <button id="6" class="guzik" onclick="goto('praktyka.html')">Praktyka</button>
+        <button id="6" class="guzik" onclick="goto('kontakt.html')">Kontakt</button>
+        <button id="7" class="guzik" onclick="goto('sett.html')">Ustawienia</button>
+        <button id="8" class="guzik" onclick="goto('chemle.html')">Gierka</button>
+    </nav>
+    <br><br><br><br>
+    <article>
+        <h1>Witaj w temacie - Tiole!</h1>
+        <p>Jeśli myślicie, że związki chemiczne pachną zawsze ładnie, to tiol szybko zmieni wasze zdanie. 😅 Tiole to związki, które często śmierdzą jak zgniłe jaja, ale bez nich świat chemii byłby uboższy.</p>
+    
+        <h3>Czym są tiole?</h3>
+        <p>Tiole to pochodne węglowodorów, w których grupa hydroksylowa (<a href="grupyf.html">grupa</a> -OH) została zastąpiona grupą tiolową (-SH). Mówiąc prościej: zamiast tlenu mamy siarkę, a to robi OGROMNĄ różnicę.</p>
+    
+        <h3>Nazewnictwo tioli:</h3>
+        <p>Jeśli znasz zasady nazewnictwa alkoholi, jesteś już w połowie drogi!</p>
+        <ul>
+            <li>Dodajesz końcówkę "-tiol" do nazwy węglowodoru.</li>
+            <li>Tak jak przy alkoholach, pamiętaj o lokantach przy dłuższych łańcuchach.</li>
+        </ul>
+        <p>Przykłady:</p>
+        <ul>
+            <li>CH<sub>3</sub>-SH – metanotiol (albo po ludzku: tiometan)</li>
+            <li>CH<sub>3</sub>-CH<sub>2</sub>-SH – etanotiol</li>
+            <li>CH<sub>2</sub>SH-CH<sub>2</sub>SH – etano-1,2-ditiol</li>
+        </ul>
+    
+        <h3>Właściwości:</h3>
+        <ul>
+            <li>Mają bardzo silny, często nieprzyjemny zapach.</li>
+            <li>Gorzej rozpuszczają się w wodzie niż alkohole.</li>
+            <li>Reagują z utleniaczami tworząc dysiarczki (wiązanie S-S <label class="spoiler">jak w 1939💀</label>) – bardzo ważne w chemii biologicznej!</li>
+            <li>Tiolowe grupy są kwasowe (słabiej niż fenole, ale mocniej niż alkohole).</li>
+        </ul>
+    
+        <h3>Mały teścik:</h3>
+        <ul>
+            <li>CH<sub>3</sub>-CH<sub>2</sub>-SH - <input type="text" onblur="checkAnswer(this,'etanotiol')"></li>
+            <br>
+            <li>CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-SH - <input type="text" onblur="checkAnswer(this,'propano-1-tiol')"></li>
+            <br>
+            <li>CH<sub>3</sub>-CH(SH)-CH<sub>3</sub> - <input type="text" onblur="checkAnswer(this,'propano-2-tiol')"></li>
+        </ul>
+    
+        <h3>Reakcje charakterystyczne?</h3>
+        <p>Tiole są mistrzami tworzenia mostków disiarczkowych (-S-S-), które stabilizują białka w twoim ciele! Bez tioli twoje włosy nie byłyby takie sprężyste (ani twoje paznokcie takie twarde).</p>
+        <table>
+            <tr>
+                <li>
+                    <a href="etery.html">Następny temat -&gt;</a>
+                </li>
+            </tr>
+        </table>
+    </article>
+    
+    <footer>
+    <footer>
+        <a href="https://warchem.pl">
+            <img src="png/warchem.png" style="width: 100%;" alt="Warchem">
+        </a>
+    </footer>
+</body>
+</html>
