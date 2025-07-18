@@ -111,3 +111,7 @@ button
     width: 75px;
     height: auto;
 }
+footer
+{
+   display: none;
+}
