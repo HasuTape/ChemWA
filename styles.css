@@ -8,6 +8,10 @@ html
     min-height: 100%;
     height: auto;
 }
+footer
+{
+    display: none;
+}
 .ciekawostka
 {
     background: linear-gradient(135deg, #bc74ff, #81ffff);
