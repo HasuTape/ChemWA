@@ -67,7 +67,7 @@ article, input
 }
 footer
 {
-    display: flex;
+    display: none;
     justify-content: center;
 }
 article p
@@ -114,6 +114,7 @@ button
 {
     width: 75px;
     height: auto;
+
 }
 footer
 {
